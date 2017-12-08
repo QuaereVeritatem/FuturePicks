@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="orbitron-bold.otf">
+            <string>Orbitron-Bold</string>
+        </array>
+        <array key="orbitron-medium.otf">
+            <string>Orbitron-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FuturePicks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="qan-8a-fWd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.20000000000000001" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Picks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8U-qJ-qLb">
+                                <rect key="frame" x="35" y="72" width="305" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="JR6-ea-U0c"/>
+                                    <constraint firstAttribute="height" constant="49" id="UdW-zB-s5P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Bold" family="Orbitron" pointSize="36"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.20784313725490194" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The place for future lottery numbers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-Fi-tzb">
+                                <rect key="frame" x="32.5" y="129" width="310" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Jlz-0Z-te3"/>
+                                    <constraint firstAttribute="width" constant="310" id="jpL-lR-Wfj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Bold" family="Orbitron" pointSize="15"/>
+                                <color key="textColor" red="0.18431372549019609" green="0.20784313725490194" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChooseGameImage" translatesAutoresizingMaskIntoConstraints="NO" id="aDN-Ao-vG8" userLabel="TableBGRect">
+                                <rect key="frame" x="44" y="199" width="286" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="d3H-ZC-dvW"/>
+                                    <constraint firstAttribute="width" constant="286" id="oHA-tq-4bI"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yW-Fr-zaS">
+                                <rect key="frame" x="54" y="219" width="266" height="229"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="9KP-bR-mx4"/>
+                                    <constraint firstAttribute="height" constant="229" id="ug0-oA-qwp"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-eI-wUQ">
+                                <rect key="frame" x="124" y="513" width="126" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Q7E-Z4-TJ7"/>
+                                    <constraint firstAttribute="height" constant="64" id="XsN-AJ-sE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="30"/>
+                                <state key="normal" title="PLAY" backgroundImage="PlayButtonImage"/>
+                                <connections>
+                                    <action selector="playBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3w-jH-dPc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GTF-eI-wUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1QC-N3-cts"/>
+                            <constraint firstItem="6S6-Fi-tzb" firstAttribute="top" secondItem="L8U-qJ-qLb" secondAttribute="bottom" constant="8" id="AwX-Ac-ttY"/>
+                            <constraint firstItem="qan-8a-fWd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E3d-dk-c8i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qan-8a-fWd" secondAttribute="bottom" id="EAm-8g-N1J"/>
+                            <constraint firstItem="7yW-Fr-zaS" firstAttribute="centerY" secondItem="aDN-Ao-vG8" secondAttribute="centerY" id="Kcb-3r-GY6"/>
+                            <constraint firstItem="aDN-Ao-vG8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LB3-eC-eht"/>
+                            <constraint firstItem="aDN-Ao-vG8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbN-CP-zoP"/>
+                            <constraint firstItem="qan-8a-fWd" firstAttribute="top" secondItem="L8U-qJ-qLb" secondAttribute="top" constant="-72" id="czw-Os-py3"/>
+                            <constraint firstItem="GTF-eI-wUQ" firstAttribute="top" secondItem="aDN-Ao-vG8" secondAttribute="bottom" constant="45" id="ghp-wF-v7W"/>
+                            <constraint firstItem="qan-8a-fWd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="heS-hM-YX2"/>
+                            <constraint firstAttribute="trailing" secondItem="qan-8a-fWd" secondAttribute="trailing" id="jAW-2l-www"/>
+                            <constraint firstItem="6S6-Fi-tzb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ui7-75-vRY"/>
+                            <constraint firstItem="L8U-qJ-qLb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w4y-Qg-QTk"/>
+                            <constraint firstItem="7yW-Fr-zaS" firstAttribute="centerX" secondItem="aDN-Ao-vG8" secondAttribute="centerX" id="wto-D4-0bN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chooseAlottoGame" destination="7yW-Fr-zaS" id="zFs-f5-VaZ"/>
+                        <segue destination="E3y-lB-mxy" kind="showDetail" identifier="powerBallSegue" id="mq7-d7-LVd"/>
+                        <segue destination="P6f-D1-5z1" kind="showDetail" identifier="lottoTexasSegue" id="Gby-hi-dcP"/>
+                        <segue destination="ydV-YW-MMr" kind="showDetail" identifier="megaMillionsSegue" id="1mC-a1-0Qf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--PowerBallViewController-->
+        <scene sceneID="RWC-gI-gh6">
+            <objects>
+                <viewController id="WVF-ep-1dl" userLabel="PowerBallViewController" customClass="PowerBallViewController" customModule="FuturePicks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D3F-gR-tHy"/>
+                        <viewControllerLayoutGuide type="bottom" id="SMa-Nc-vJ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dYe-zs-aWz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="eyu-6f-fVk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllNumbersExceptLottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="RLP-58-bVY" userLabel="AllNumbersRect">
+                                <rect key="frame" x="23" y="59" width="328" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="kCB-Iw-K8B"/>
+                                    <constraint firstAttribute="width" constant="328" id="m17-ig-BLK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllNumbersExceptLottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="L9Y-Hd-Tbq" userLabel="PowerBallRect">
+                                <rect key="frame" x="23" y="281" width="328" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="82F-rO-gvL"/>
+                                    <constraint firstAttribute="height" constant="182" id="NII-Cr-Htp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph5-s3-lVe">
+                                <rect key="frame" x="96" y="79" width="183" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ofZ-Z0-yJH"/>
+                                    <constraint firstAttribute="width" constant="183" id="rah-87-8ka"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGa-KA-ESM">
+                                <rect key="frame" x="79" y="301" width="217" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="m5I-44-wFM"/>
+                                    <constraint firstAttribute="height" constant="43" id="y9I-Hx-t9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71w-yO-DAk" userLabel="PB">
+                                <rect key="frame" x="167" y="393" width="44" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="SVM-1I-cZt"/>
+                                    <constraint firstAttribute="height" constant="32" id="rFW-pQ-okf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-tC-vnn" userLabel="L1">
+                                <rect key="frame" x="38" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EaU-8i-QZL"/>
+                                    <constraint firstAttribute="width" constant="42" id="zuY-qu-CTf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzH-ps-0Ap" userLabel="L2">
+                                <rect key="frame" x="102" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Nb-uJ-qps"/>
+                                    <constraint firstAttribute="width" constant="42" id="2Cb-DF-e4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4B-rZ-LIb" userLabel="L3">
+                                <rect key="frame" x="166" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jhl-uh-ad5"/>
+                                    <constraint firstAttribute="width" constant="42" id="tOZ-Er-fK0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lou-4L-9UI" userLabel="L4">
+                                <rect key="frame" x="230" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="BV0-bM-554"/>
+                                    <constraint firstAttribute="height" constant="30" id="Mwd-Jt-qbU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adX-NS-dtQ" userLabel="L5">
+                                <rect key="frame" x="294" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Ux-Oa-YPM"/>
+                                    <constraint firstAttribute="width" constant="42" id="FMv-oU-ieG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="71w-yO-DAk" firstAttribute="centerX" secondItem="dYe-zs-aWz" secondAttribute="centerX" constant="1" id="DQc-6l-H2F"/>
+                            <constraint firstItem="RLP-58-bVY" firstAttribute="leading" secondItem="dgf-tC-vnn" secondAttribute="trailing" constant="-57" id="GLc-FO-8r9"/>
+                            <constraint firstItem="N4B-rZ-LIb" firstAttribute="leading" secondItem="nzH-ps-0Ap" secondAttribute="trailing" constant="22" id="HUZ-aA-vie"/>
+                            <constraint firstItem="lou-4L-9UI" firstAttribute="leading" secondItem="N4B-rZ-LIb" secondAttribute="trailing" constant="22" id="I2X-Pw-5Rz"/>
+                            <constraint firstItem="L9Y-Hd-Tbq" firstAttribute="centerX" secondItem="dYe-zs-aWz" secondAttribute="centerX" id="JBk-BG-4Vx"/>
+                            <constraint firstItem="RLP-58-bVY" firstAttribute="centerX" secondItem="dYe-zs-aWz" secondAttribute="centerX" id="Jo8-Mt-fbt"/>
+                            <constraint firstItem="dgf-tC-vnn" firstAttribute="top" secondItem="N4B-rZ-LIb" secondAttribute="bottom" constant="-30" id="NDO-Qt-qiS"/>
+                            <constraint firstAttribute="trailing" secondItem="eyu-6f-fVk" secondAttribute="trailing" id="NNl-Kr-bfY"/>
+                            <constraint firstItem="dgf-tC-vnn" firstAttribute="top" secondItem="Ph5-s3-lVe" secondAttribute="bottom" constant="49" id="P5Y-iu-Ln6"/>
+                            <constraint firstItem="L9Y-Hd-Tbq" firstAttribute="top" secondItem="RLP-58-bVY" secondAttribute="bottom" constant="40" id="TPi-qv-n2n"/>
+                            <constraint firstItem="RLP-58-bVY" firstAttribute="top" secondItem="Ph5-s3-lVe" secondAttribute="bottom" constant="-63" id="UbT-Nm-EPe"/>
+                            <constraint firstItem="adX-NS-dtQ" firstAttribute="leading" secondItem="RLP-58-bVY" secondAttribute="trailing" constant="-57" id="V19-W8-hY6"/>
+                            <constraint firstItem="SMa-Nc-vJ6" firstAttribute="top" secondItem="eyu-6f-fVk" secondAttribute="bottom" id="Vf6-qS-8bm"/>
+                            <constraint firstItem="dgf-tC-vnn" firstAttribute="top" secondItem="lou-4L-9UI" secondAttribute="bottom" constant="-30" id="cUZ-r2-VZQ"/>
+                            <constraint firstItem="L9Y-Hd-Tbq" firstAttribute="top" secondItem="aGa-KA-ESM" secondAttribute="bottom" constant="-63" id="dZF-K3-1PT"/>
+                            <constraint firstItem="eyu-6f-fVk" firstAttribute="top" secondItem="dYe-zs-aWz" secondAttribute="top" id="eh9-1r-sqO"/>
+                            <constraint firstItem="RLP-58-bVY" firstAttribute="top" secondItem="D3F-gR-tHy" secondAttribute="bottom" constant="59" id="hO9-ob-k9D"/>
+                            <constraint firstItem="nzH-ps-0Ap" firstAttribute="leading" secondItem="dgf-tC-vnn" secondAttribute="trailing" constant="22" id="hXn-p4-Mnv"/>
+                            <constraint firstItem="eyu-6f-fVk" firstAttribute="leading" secondItem="dYe-zs-aWz" secondAttribute="leading" id="jbX-em-T7A"/>
+                            <constraint firstItem="adX-NS-dtQ" firstAttribute="leading" secondItem="lou-4L-9UI" secondAttribute="trailing" constant="22" id="lfu-7i-ENA"/>
+                            <constraint firstItem="dgf-tC-vnn" firstAttribute="top" secondItem="nzH-ps-0Ap" secondAttribute="bottom" constant="-30" id="luD-T8-la7"/>
+                            <constraint firstItem="71w-yO-DAk" firstAttribute="top" secondItem="aGa-KA-ESM" secondAttribute="bottom" constant="49" id="quD-7V-UT4"/>
+                            <constraint firstItem="aGa-KA-ESM" firstAttribute="centerX" secondItem="dYe-zs-aWz" secondAttribute="centerX" id="vIP-Ja-yge"/>
+                            <constraint firstItem="Ph5-s3-lVe" firstAttribute="centerX" secondItem="dYe-zs-aWz" secondAttribute="centerX" id="x7W-TZ-Pri"/>
+                            <constraint firstItem="dgf-tC-vnn" firstAttribute="top" secondItem="adX-NS-dtQ" secondAttribute="bottom" constant="-30" id="xQH-oq-R3X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Power Ball" largeTitleDisplayMode="always" id="oVo-JG-gjb">
+                        <barButtonItem key="backBarButtonItem" title="&lt; Choose Game" id="jgj-3n-zA1"/>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;BACK" style="plain" id="GNl-pI-mKn">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="sGw-Da-dVG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="num1" destination="dgf-tC-vnn" id="51T-2R-7gY"/>
+                        <outlet property="num2" destination="nzH-ps-0Ap" id="u1D-CF-az9"/>
+                        <outlet property="num3" destination="N4B-rZ-LIb" id="xkj-J4-s9l"/>
+                        <outlet property="num4" destination="lou-4L-9UI" id="qw9-6F-RCj"/>
+                        <outlet property="num5" destination="adX-NS-dtQ" id="fYN-qp-ZdG"/>
+                        <outlet property="powerBallNum" destination="71w-yO-DAk" id="Wb2-pB-Hyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Q7-X5-zHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293.5999999999999" y="-603.14842578710648"/>
+        </scene>
+        <!--LottoTexasViewController-->
+        <scene sceneID="FkQ-Eo-Z3G">
+            <objects>
+                <viewController id="qVc-K5-YZn" userLabel="LottoTexasViewController" customClass="LottoTexasViewController" customModule="FuturePicks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="foc-PV-8SQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6jX-gt-dAS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o7a-iM-E2m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-OV-eY4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="2kw-8V-prl" userLabel="NumbersBGRect">
+                                <rect key="frame" x="15" y="59" width="345" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="Zsj-Pb-uYJ"/>
+                                    <constraint firstAttribute="width" constant="345" id="uUn-TE-Mtz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By8-9O-VMU">
+                                <rect key="frame" x="96" y="79" width="183" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="M82-RD-ezV"/>
+                                    <constraint firstAttribute="height" constant="43" id="dkS-5F-CBw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MH4-eq-pI6" userLabel="L1">
+                                <rect key="frame" x="22" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="bvW-8v-GAq"/>
+                                    <constraint firstAttribute="height" constant="30" id="cW8-yW-lcJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL3-bH-eoY" userLabel="L2">
+                                <rect key="frame" x="80" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DDF-77-naw"/>
+                                    <constraint firstAttribute="width" constant="42" id="e0Z-8M-GRd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzC-GQ-57r" userLabel="L3">
+                                <rect key="frame" x="138" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BHG-2s-P00"/>
+                                    <constraint firstAttribute="width" constant="42" id="s7J-ek-1mv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsW-qr-UUJ" userLabel="L4">
+                                <rect key="frame" x="196" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="HAo-5Q-Ms9"/>
+                                    <constraint firstAttribute="height" constant="30" id="rWP-a5-8qu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldj-TU-JYg" userLabel="L5">
+                                <rect key="frame" x="254" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1aC-Qx-jkG"/>
+                                    <constraint firstAttribute="width" constant="42" id="tiZ-8c-011"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4v-cT-RcV" userLabel="L6">
+                                <rect key="frame" x="312" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="JSC-ys-83P"/>
+                                    <constraint firstAttribute="height" constant="30" id="qTX-un-P8d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XzC-GQ-57r" firstAttribute="leading" secondItem="aL3-bH-eoY" secondAttribute="trailing" constant="16" id="3oE-f2-uzh"/>
+                            <constraint firstItem="T4v-cT-RcV" firstAttribute="top" secondItem="MH4-eq-pI6" secondAttribute="bottom" constant="-30" id="6f8-60-Vri"/>
+                            <constraint firstItem="QsW-qr-UUJ" firstAttribute="leading" secondItem="XzC-GQ-57r" secondAttribute="trailing" constant="16" id="804-3Z-mBA"/>
+                            <constraint firstItem="XzC-GQ-57r" firstAttribute="top" secondItem="MH4-eq-pI6" secondAttribute="bottom" constant="-30" id="Bx2-ai-kr4"/>
+                            <constraint firstItem="By8-9O-VMU" firstAttribute="centerX" secondItem="o7a-iM-E2m" secondAttribute="centerX" id="CI6-ke-D0z"/>
+                            <constraint firstItem="TbK-OV-eY4" firstAttribute="leading" secondItem="o7a-iM-E2m" secondAttribute="leading" id="CxW-H9-8T7"/>
+                            <constraint firstItem="aL3-bH-eoY" firstAttribute="leading" secondItem="MH4-eq-pI6" secondAttribute="trailing" constant="16" id="FPV-fs-e6o"/>
+                            <constraint firstItem="TbK-OV-eY4" firstAttribute="top" secondItem="o7a-iM-E2m" secondAttribute="top" id="JMW-u2-FXd"/>
+                            <constraint firstItem="T4v-cT-RcV" firstAttribute="leading" secondItem="ldj-TU-JYg" secondAttribute="trailing" constant="16" id="KdU-i9-uox"/>
+                            <constraint firstItem="ldj-TU-JYg" firstAttribute="top" secondItem="MH4-eq-pI6" secondAttribute="bottom" constant="-30" id="L29-k2-3gA"/>
+                            <constraint firstItem="2kw-8V-prl" firstAttribute="leading" secondItem="MH4-eq-pI6" secondAttribute="trailing" constant="-49" id="LwI-kj-T3b"/>
+                            <constraint firstItem="2kw-8V-prl" firstAttribute="top" secondItem="foc-PV-8SQ" secondAttribute="bottom" constant="59" id="OKl-BM-J8E"/>
+                            <constraint firstItem="aL3-bH-eoY" firstAttribute="top" secondItem="MH4-eq-pI6" secondAttribute="bottom" constant="-30" id="YhP-BW-DYI"/>
+                            <constraint firstItem="MH4-eq-pI6" firstAttribute="top" secondItem="By8-9O-VMU" secondAttribute="bottom" constant="49" id="Z3V-bE-NhL"/>
+                            <constraint firstItem="ldj-TU-JYg" firstAttribute="leading" secondItem="QsW-qr-UUJ" secondAttribute="trailing" constant="16" id="ZVz-UA-Wob"/>
+                            <constraint firstItem="2kw-8V-prl" firstAttribute="centerX" secondItem="o7a-iM-E2m" secondAttribute="centerX" id="aKZ-ix-xc9"/>
+                            <constraint firstItem="2kw-8V-prl" firstAttribute="top" secondItem="By8-9O-VMU" secondAttribute="bottom" constant="-63" id="doT-UF-zgN"/>
+                            <constraint firstItem="QsW-qr-UUJ" firstAttribute="top" secondItem="MH4-eq-pI6" secondAttribute="bottom" constant="-30" id="g4K-62-fKO"/>
+                            <constraint firstItem="6jX-gt-dAS" firstAttribute="top" secondItem="TbK-OV-eY4" secondAttribute="bottom" id="jqh-pq-ns6"/>
+                            <constraint firstAttribute="trailing" secondItem="TbK-OV-eY4" secondAttribute="trailing" id="phq-b7-gpu"/>
+                            <constraint firstItem="T4v-cT-RcV" firstAttribute="leading" secondItem="2kw-8V-prl" secondAttribute="trailing" constant="-48" id="t6J-EC-vRm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lotto Texas" largeTitleDisplayMode="always" id="bKu-sv-igq">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;BACK" style="plain" id="8XF-Af-uAf">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="WDL-s1-T4G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="num1" destination="MH4-eq-pI6" id="7ri-4Z-IeD"/>
+                        <outlet property="num2" destination="aL3-bH-eoY" id="KLB-Ug-bBb"/>
+                        <outlet property="num3" destination="XzC-GQ-57r" id="ic7-4g-KeD"/>
+                        <outlet property="num4" destination="QsW-qr-UUJ" id="Xtx-M5-Qs8"/>
+                        <outlet property="num5" destination="ldj-TU-JYg" id="57A-dT-6z2"/>
+                        <outlet property="num6" destination="T4v-cT-RcV" id="baV-FQ-Lyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDd-K4-tIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295.1999999999998" y="137.18140929535232"/>
+        </scene>
+        <!--MegaMillionsViewController-->
+        <scene sceneID="fgh-VO-xjk">
+            <objects>
+                <viewController id="5Ua-Mn-LaW" userLabel="MegaMillionsViewController" customClass="MegaMillionsViewController" customModule="FuturePicks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v14-oD-arx"/>
+                        <viewControllerLayoutGuide type="bottom" id="IKG-7K-KEX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Ka-5M-2SW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-nY-eNH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllNumbersExceptLottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-dz-XIU" userLabel="AllNumbersRect">
+                                <rect key="frame" x="23" y="59" width="328" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="TLa-Sm-uFz"/>
+                                    <constraint firstAttribute="height" constant="182" id="sQW-Fj-21t"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllNumbersExceptLottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="EeH-Ix-Y2Y" userLabel="MegaBallRect">
+                                <rect key="frame" x="23" y="281" width="328" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="UGa-A8-s8y"/>
+                                    <constraint firstAttribute="width" constant="328" id="nAe-YP-EZ3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-fc-IWa">
+                                <rect key="frame" x="95.5" y="79" width="183" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="66k-Wy-rk7"/>
+                                    <constraint firstAttribute="height" constant="43" id="o3O-Ed-x8O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mega Ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcJ-zn-v9S">
+                                <rect key="frame" x="77" y="301" width="220" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Nkm-16-k1e"/>
+                                    <constraint firstAttribute="height" constant="43" id="RN3-Cp-3wK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgI-oz-OEO" userLabel="L1">
+                                <rect key="frame" x="38" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="ZyH-UB-Qth"/>
+                                    <constraint firstAttribute="height" constant="30" id="oqC-3f-m4n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2af-jt-95P" userLabel="L2">
+                                <rect key="frame" x="102" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DhO-JV-Ree"/>
+                                    <constraint firstAttribute="width" constant="42" id="cZU-kz-uo5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRE-f9-Y25" userLabel="L3">
+                                <rect key="frame" x="166" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NnW-UR-2r7"/>
+                                    <constraint firstAttribute="width" constant="42" id="woB-xU-DOC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoh-8M-ygd" userLabel="L4">
+                                <rect key="frame" x="230" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qbh-qh-iiK"/>
+                                    <constraint firstAttribute="width" constant="42" id="t4o-7f-tLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-8u-TV9" userLabel="L5">
+                                <rect key="frame" x="294" y="171" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="Lr1-qj-xTx"/>
+                                    <constraint firstAttribute="height" constant="30" id="W2h-Sg-u7x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbP-tM-MrC" userLabel="MB">
+                                <rect key="frame" x="166" y="393" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4uq-z1-E8G"/>
+                                    <constraint firstAttribute="height" constant="30" id="JeK-8G-Vw3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Orbitron-Medium" family="Orbitron" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E2W-dz-XIU" firstAttribute="leading" secondItem="RgI-oz-OEO" secondAttribute="trailing" constant="-57" id="4sU-Tk-adt"/>
+                            <constraint firstItem="6p5-8u-TV9" firstAttribute="top" secondItem="RgI-oz-OEO" secondAttribute="bottom" constant="-30" id="7ec-hG-gkU"/>
+                            <constraint firstItem="OEf-nY-eNH" firstAttribute="leading" secondItem="7Ka-5M-2SW" secondAttribute="leading" id="8ys-NB-EBk"/>
+                            <constraint firstItem="E2W-dz-XIU" firstAttribute="centerX" secondItem="7Ka-5M-2SW" secondAttribute="centerX" id="A3o-mf-Zxc"/>
+                            <constraint firstItem="E2W-dz-XIU" firstAttribute="top" secondItem="v14-oD-arx" secondAttribute="bottom" constant="59" id="Dly-7r-mtK"/>
+                            <constraint firstItem="C9i-fc-IWa" firstAttribute="centerX" secondItem="7Ka-5M-2SW" secondAttribute="centerX" id="FeN-2q-1wb"/>
+                            <constraint firstItem="OEf-nY-eNH" firstAttribute="top" secondItem="7Ka-5M-2SW" secondAttribute="top" id="Itp-G0-X8O"/>
+                            <constraint firstItem="EeH-Ix-Y2Y" firstAttribute="top" secondItem="E2W-dz-XIU" secondAttribute="bottom" constant="40" id="RJt-kQ-OFg"/>
+                            <constraint firstItem="ZbP-tM-MrC" firstAttribute="centerX" secondItem="7Ka-5M-2SW" secondAttribute="centerX" id="TEb-5n-3Sn"/>
+                            <constraint firstItem="qoh-8M-ygd" firstAttribute="leading" secondItem="JRE-f9-Y25" secondAttribute="trailing" constant="22" id="Vjv-vp-37V"/>
+                            <constraint firstItem="JRE-f9-Y25" firstAttribute="top" secondItem="RgI-oz-OEO" secondAttribute="bottom" constant="-30" id="WFZ-gb-SJ5"/>
+                            <constraint firstItem="ZbP-tM-MrC" firstAttribute="top" secondItem="EcJ-zn-v9S" secondAttribute="bottom" constant="49" id="XPQ-M0-sjT"/>
+                            <constraint firstItem="6p5-8u-TV9" firstAttribute="leading" secondItem="E2W-dz-XIU" secondAttribute="trailing" constant="-57" id="YNl-kX-Zl5"/>
+                            <constraint firstItem="6p5-8u-TV9" firstAttribute="leading" secondItem="qoh-8M-ygd" secondAttribute="trailing" constant="22" id="bMw-6a-onf"/>
+                            <constraint firstItem="2af-jt-95P" firstAttribute="top" secondItem="RgI-oz-OEO" secondAttribute="bottom" constant="-30" id="dwi-Qn-FDO"/>
+                            <constraint firstItem="JRE-f9-Y25" firstAttribute="top" secondItem="C9i-fc-IWa" secondAttribute="bottom" constant="49" id="fB8-Nh-9fd"/>
+                            <constraint firstItem="JRE-f9-Y25" firstAttribute="leading" secondItem="2af-jt-95P" secondAttribute="trailing" constant="22" id="iYn-Sv-qDo"/>
+                            <constraint firstItem="qoh-8M-ygd" firstAttribute="top" secondItem="RgI-oz-OEO" secondAttribute="bottom" constant="-30" id="lXc-gg-tpo"/>
+                            <constraint firstItem="EeH-Ix-Y2Y" firstAttribute="top" secondItem="EcJ-zn-v9S" secondAttribute="bottom" constant="-63" id="lvQ-JU-dog"/>
+                            <constraint firstItem="EcJ-zn-v9S" firstAttribute="centerX" secondItem="7Ka-5M-2SW" secondAttribute="centerX" id="mBG-8y-Qcd"/>
+                            <constraint firstItem="E2W-dz-XIU" firstAttribute="top" secondItem="C9i-fc-IWa" secondAttribute="bottom" constant="-63" id="nF5-qA-s2R"/>
+                            <constraint firstItem="EeH-Ix-Y2Y" firstAttribute="centerX" secondItem="7Ka-5M-2SW" secondAttribute="centerX" id="r42-FE-4BF"/>
+                            <constraint firstItem="2af-jt-95P" firstAttribute="leading" secondItem="RgI-oz-OEO" secondAttribute="trailing" constant="22" id="rY0-kb-fRv"/>
+                            <constraint firstItem="IKG-7K-KEX" firstAttribute="top" secondItem="OEf-nY-eNH" secondAttribute="bottom" id="smR-tU-3vE"/>
+                            <constraint firstAttribute="trailing" secondItem="OEf-nY-eNH" secondAttribute="trailing" id="vev-li-boV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mega Millions" largeTitleDisplayMode="always" id="Gku-EB-8tp">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;BACK" style="plain" id="01W-vF-eKd">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="Xwa-t5-wNr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="megaBallNum" destination="ZbP-tM-MrC" id="Vuq-5d-JTv"/>
+                        <outlet property="num1" destination="RgI-oz-OEO" id="XGa-kA-qeZ"/>
+                        <outlet property="num2" destination="2af-jt-95P" id="da3-Yc-gmL"/>
+                        <outlet property="num3" destination="JRE-f9-Y25" id="iVu-Jg-SeQ"/>
+                        <outlet property="num4" destination="qoh-8M-ygd" id="e1T-JD-wMS"/>
+                        <outlet property="num5" destination="6p5-8u-TV9" id="1iP-iA-NpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07E-QQ-IwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293.5999999999999" y="857.72113943028489"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Du-Ci-qO7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P6f-D1-5z1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="3Q8-5k-mCy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.36078431372549019" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qVc-K5-YZn" kind="relationship" relationship="rootViewController" id="WFm-jt-SUj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYq-gH-qhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="137"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zp4-sf-Tf4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E3y-lB-mxy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="oOm-ww-I59">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.36078431372549019" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WVF-ep-1dl" kind="relationship" relationship="rootViewController" id="umo-CD-UAb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ORh-1f-tcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1158" y="-603"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eZi-fh-Ih1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ydV-YW-MMr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="QDU-KM-Fkp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.36078431372549019" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Ua-Mn-LaW" kind="relationship" relationship="rootViewController" id="m8Z-Vd-v7s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jam-J1-0HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.5999999999999" y="857.72113943028489"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AllNumbersExceptLottoTexasRectangle" width="342" height="194"/>
+        <image name="ChooseGameImage" width="300" height="283"/>
+        <image name="LottoTexasRectangle" width="359" height="194"/>
+        <image name="NewBGDesignWhite" width="375" height="667"/>
+        <image name="PlayButtonImage" width="138" height="76"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Xwa-t5-wNr"/>
+    </inferredMetricsTieBreakers>
+</document>

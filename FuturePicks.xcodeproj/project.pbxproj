@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3733AF731FAD3C4400C4EF44 /* ChooseGamePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733AF721FAD3C4400C4EF44 /* ChooseGamePickerView.swift */; };
+		3733AF771FAD3E3E00C4EF44 /* Powerball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733AF761FAD3E3E00C4EF44 /* Powerball.swift */; };
+		3733AF791FAD3FAE00C4EF44 /* Megamillions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733AF781FAD3FAE00C4EF44 /* Megamillions.swift */; };
+		3733AF7B1FAD3FDA00C4EF44 /* Lottotexas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3733AF7A1FAD3FDA00C4EF44 /* Lottotexas.swift */; };
+		3769C79A1F4EFF0F000253DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7991F4EFF0F000253DF /* AppDelegate.swift */; };
+		3769C79C1F4EFF0F000253DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C79B1F4EFF0F000253DF /* ViewController.swift */; };
+		3769C79F1F4EFF0F000253DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3769C79D1F4EFF0F000253DF /* Main.storyboard */; };
+		3769C7A21F4EFF0F000253DF /* FuturePicks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7A01F4EFF0F000253DF /* FuturePicks.xcdatamodeld */; };
+		3769C7A41F4EFF0F000253DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3769C7A31F4EFF0F000253DF /* Assets.xcassets */; };
+		3769C7A71F4EFF0F000253DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3769C7A51F4EFF0F000253DF /* LaunchScreen.storyboard */; };
+		3769C7B21F4EFF0F000253DF /* FuturePicksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7B11F4EFF0F000253DF /* FuturePicksTests.swift */; };
+		3769C7BD1F4EFF0F000253DF /* FuturePicksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7BC1F4EFF0F000253DF /* FuturePicksUITests.swift */; };
+		3769C7CB1F50F4EE000253DF /* PowerBallDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7CA1F50F4EE000253DF /* PowerBallDataSet.swift */; };
+		3769C7CD1F53C0CE000253DF /* FuturePicksProgramOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7CC1F53C0CE000253DF /* FuturePicksProgramOutline.swift */; };
+		3769C7D11F60D2DC000253DF /* LottoTexasDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7D01F60D2DC000253DF /* LottoTexasDataSet.swift */; };
+		3769C7D31F60D306000253DF /* MegaMillionsDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7D21F60D306000253DF /* MegaMillionsDataSet.swift */; };
+		3769C7D71F61D9B4000253DF /* MegaMillionsPastNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C7D61F61D9B4000253DF /* MegaMillionsPastNumbers.swift */; };
+		3769C8181F642727000253DF /* RandomNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769C8171F642727000253DF /* RandomNumberGenerator.swift */; };
+		3769C92D1F76026C000253DF /* orbitron-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C9291F76026C000253DF /* orbitron-black.otf */; };
+		3769C92E1F76026C000253DF /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C92A1F76026C000253DF /* orbitron-bold.otf */; };
+		3769C92F1F76026C000253DF /* orbitron-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C92B1F76026C000253DF /* orbitron-light.otf */; };
+		3769C9301F76026C000253DF /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C92C1F76026C000253DF /* orbitron-medium.otf */; };
+		37D432701FA74DE4002B0827 /* PowerBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4326F1FA74DE4002B0827 /* PowerBallViewController.swift */; };
+		37D432721FA74E01002B0827 /* LottoTexasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D432711FA74E01002B0827 /* LottoTexasViewController.swift */; };
+		37D432741FA74E1C002B0827 /* MegaMillionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D432731FA74E1C002B0827 /* MegaMillionsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3769C7AE1F4EFF0F000253DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3769C78E1F4EFF0F000253DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3769C7951F4EFF0F000253DF;
+			remoteInfo = FuturePicks;
+		};
+		3769C7B91F4EFF0F000253DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3769C78E1F4EFF0F000253DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3769C7951F4EFF0F000253DF;
+			remoteInfo = FuturePicks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3733AF721FAD3C4400C4EF44 /* ChooseGamePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGamePickerView.swift; sourceTree = "<group>"; };
+		3733AF761FAD3E3E00C4EF44 /* Powerball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Powerball.swift; sourceTree = "<group>"; };
+		3733AF781FAD3FAE00C4EF44 /* Megamillions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Megamillions.swift; sourceTree = "<group>"; };
+		3733AF7A1FAD3FDA00C4EF44 /* Lottotexas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottotexas.swift; sourceTree = "<group>"; };
+		3769C7961F4EFF0F000253DF /* FuturePicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuturePicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3769C7991F4EFF0F000253DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3769C79B1F4EFF0F000253DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3769C79E1F4EFF0F000253DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3769C7A11F4EFF0F000253DF /* FuturePicks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FuturePicks.xcdatamodel; sourceTree = "<group>"; };
+		3769C7A31F4EFF0F000253DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3769C7A61F4EFF0F000253DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3769C7A81F4EFF0F000253DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3769C7AD1F4EFF0F000253DF /* FuturePicksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuturePicksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3769C7B11F4EFF0F000253DF /* FuturePicksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturePicksTests.swift; sourceTree = "<group>"; };
+		3769C7B31F4EFF0F000253DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3769C7B81F4EFF0F000253DF /* FuturePicksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FuturePicksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3769C7BC1F4EFF0F000253DF /* FuturePicksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturePicksUITests.swift; sourceTree = "<group>"; };
+		3769C7BE1F4EFF0F000253DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3769C7CA1F50F4EE000253DF /* PowerBallDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerBallDataSet.swift; sourceTree = "<group>"; };
+		3769C7CC1F53C0CE000253DF /* FuturePicksProgramOutline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuturePicksProgramOutline.swift; sourceTree = "<group>"; };
+		3769C7D01F60D2DC000253DF /* LottoTexasDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoTexasDataSet.swift; sourceTree = "<group>"; };
+		3769C7D21F60D306000253DF /* MegaMillionsDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaMillionsDataSet.swift; sourceTree = "<group>"; };
+		3769C7D61F61D9B4000253DF /* MegaMillionsPastNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MegaMillionsPastNumbers.swift; sourceTree = "<group>"; };
+		3769C8171F642727000253DF /* RandomNumberGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumberGenerator.swift; sourceTree = "<group>"; };
+		3769C9291F76026C000253DF /* orbitron-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-black.otf"; sourceTree = "<group>"; };
+		3769C92A1F76026C000253DF /* orbitron-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-bold.otf"; sourceTree = "<group>"; };
+		3769C92B1F76026C000253DF /* orbitron-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-light.otf"; sourceTree = "<group>"; };
+		3769C92C1F76026C000253DF /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-medium.otf"; sourceTree = "<group>"; };
+		37D4326F1FA74DE4002B0827 /* PowerBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerBallViewController.swift; sourceTree = "<group>"; };
+		37D432711FA74E01002B0827 /* LottoTexasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoTexasViewController.swift; sourceTree = "<group>"; };
+		37D432731FA74E1C002B0827 /* MegaMillionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaMillionsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3769C7931F4EFF0F000253DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C7AA1F4EFF0F000253DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C7B51F4EFF0F000253DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3733AF6B1FAD399100C4EF44 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3769C79B1F4EFF0F000253DF /* ViewController.swift */,
+				37D4326F1FA74DE4002B0827 /* PowerBallViewController.swift */,
+				37D432731FA74E1C002B0827 /* MegaMillionsViewController.swift */,
+				37D432711FA74E01002B0827 /* LottoTexasViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3733AF6C1FAD3A2400C4EF44 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		3733AF6D1FAD3A3400C4EF44 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		3733AF6E1FAD3A3E00C4EF44 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		3733AF6F1FAD3A5900C4EF44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3733AF761FAD3E3E00C4EF44 /* Powerball.swift */,
+				3733AF781FAD3FAE00C4EF44 /* Megamillions.swift */,
+				3733AF7A1FAD3FDA00C4EF44 /* Lottotexas.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3733AF701FAD3A5F00C4EF44 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3733AF711FAD3A8100C4EF44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3769C8171F642727000253DF /* RandomNumberGenerator.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3733AF741FAD3D0700C4EF44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3733AF751FAD3D4100C4EF44 /* Generic UI */ = {
+			isa = PBXGroup;
+			children = (
+				3733AF721FAD3C4400C4EF44 /* ChooseGamePickerView.swift */,
+			);
+			path = "Generic UI";
+			sourceTree = "<group>";
+		};
+		3769C78D1F4EFF0F000253DF = {
+			isa = PBXGroup;
+			children = (
+				3769C7981F4EFF0F000253DF /* FuturePicks */,
+				3769C7B01F4EFF0F000253DF /* FuturePicksTests */,
+				3769C7BB1F4EFF0F000253DF /* FuturePicksUITests */,
+				3769C7971F4EFF0F000253DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3769C7971F4EFF0F000253DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3769C7961F4EFF0F000253DF /* FuturePicks.app */,
+				3769C7AD1F4EFF0F000253DF /* FuturePicksTests.xctest */,
+				3769C7B81F4EFF0F000253DF /* FuturePicksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3769C7981F4EFF0F000253DF /* FuturePicks */ = {
+			isa = PBXGroup;
+			children = (
+				37D432751FA83BB3002B0827 /* UI */,
+				3733AF711FAD3A8100C4EF44 /* Controllers */,
+				37D432761FA83BC7002B0827 /* ModelComponents */,
+				37D432771FA8420A002B0827 /* Resources */,
+				3769C79D1F4EFF0F000253DF /* Main.storyboard */,
+				3769C7A51F4EFF0F000253DF /* LaunchScreen.storyboard */,
+				3769C7A81F4EFF0F000253DF /* Info.plist */,
+				3769C7A01F4EFF0F000253DF /* FuturePicks.xcdatamodeld */,
+			);
+			path = FuturePicks;
+			sourceTree = "<group>";
+		};
+		3769C7B01F4EFF0F000253DF /* FuturePicksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3769C7B11F4EFF0F000253DF /* FuturePicksTests.swift */,
+				3769C7B31F4EFF0F000253DF /* Info.plist */,
+			);
+			path = FuturePicksTests;
+			sourceTree = "<group>";
+		};
+		3769C7BB1F4EFF0F000253DF /* FuturePicksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3769C7BC1F4EFF0F000253DF /* FuturePicksUITests.swift */,
+				3769C7BE1F4EFF0F000253DF /* Info.plist */,
+			);
+			path = FuturePicksUITests;
+			sourceTree = "<group>";
+		};
+		37D432681FA71313002B0827 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3769C9291F76026C000253DF /* orbitron-black.otf */,
+				3769C92A1F76026C000253DF /* orbitron-bold.otf */,
+				3769C92B1F76026C000253DF /* orbitron-light.otf */,
+				3769C92C1F76026C000253DF /* orbitron-medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		37D432751FA83BB3002B0827 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3733AF751FAD3D4100C4EF44 /* Generic UI */,
+				3733AF741FAD3D0700C4EF44 /* Views */,
+				3733AF6B1FAD399100C4EF44 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		37D432761FA83BC7002B0827 /* ModelComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3733AF701FAD3A5F00C4EF44 /* Network */,
+				3733AF6F1FAD3A5900C4EF44 /* Models */,
+				3733AF6E1FAD3A3E00C4EF44 /* Error */,
+				3733AF6D1FAD3A3400C4EF44 /* Result */,
+				3733AF6C1FAD3A2400C4EF44 /* Parser */,
+				3769C7CA1F50F4EE000253DF /* PowerBallDataSet.swift */,
+				3769C7D21F60D306000253DF /* MegaMillionsDataSet.swift */,
+				3769C7D01F60D2DC000253DF /* LottoTexasDataSet.swift */,
+			);
+			path = ModelComponents;
+			sourceTree = "<group>";
+		};
+		37D432771FA8420A002B0827 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3769C7991F4EFF0F000253DF /* AppDelegate.swift */,
+				3769C7A31F4EFF0F000253DF /* Assets.xcassets */,
+				3769C7D61F61D9B4000253DF /* MegaMillionsPastNumbers.swift */,
+				3769C7CC1F53C0CE000253DF /* FuturePicksProgramOutline.swift */,
+				37D432681FA71313002B0827 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3769C7951F4EFF0F000253DF /* FuturePicks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3769C7C11F4EFF0F000253DF /* Build configuration list for PBXNativeTarget "FuturePicks" */;
+			buildPhases = (
+				3769C7921F4EFF0F000253DF /* Sources */,
+				3769C7931F4EFF0F000253DF /* Frameworks */,
+				3769C7941F4EFF0F000253DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuturePicks;
+			productName = FuturePicks;
+			productReference = 3769C7961F4EFF0F000253DF /* FuturePicks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3769C7AC1F4EFF0F000253DF /* FuturePicksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3769C7C41F4EFF0F000253DF /* Build configuration list for PBXNativeTarget "FuturePicksTests" */;
+			buildPhases = (
+				3769C7A91F4EFF0F000253DF /* Sources */,
+				3769C7AA1F4EFF0F000253DF /* Frameworks */,
+				3769C7AB1F4EFF0F000253DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3769C7AF1F4EFF0F000253DF /* PBXTargetDependency */,
+			);
+			name = FuturePicksTests;
+			productName = FuturePicksTests;
+			productReference = 3769C7AD1F4EFF0F000253DF /* FuturePicksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3769C7B71F4EFF0F000253DF /* FuturePicksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3769C7C71F4EFF0F000253DF /* Build configuration list for PBXNativeTarget "FuturePicksUITests" */;
+			buildPhases = (
+				3769C7B41F4EFF0F000253DF /* Sources */,
+				3769C7B51F4EFF0F000253DF /* Frameworks */,
+				3769C7B61F4EFF0F000253DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3769C7BA1F4EFF0F000253DF /* PBXTargetDependency */,
+			);
+			name = FuturePicksUITests;
+			productName = FuturePicksUITests;
+			productReference = 3769C7B81F4EFF0F000253DF /* FuturePicksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3769C78E1F4EFF0F000253DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Robert Martin";
+				TargetAttributes = {
+					3769C7951F4EFF0F000253DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T3K5P842PL;
+						ProvisioningStyle = Automatic;
+					};
+					3769C7AC1F4EFF0F000253DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T3K5P842PL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3769C7951F4EFF0F000253DF;
+					};
+					3769C7B71F4EFF0F000253DF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T3K5P842PL;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3769C7951F4EFF0F000253DF;
+					};
+				};
+			};
+			buildConfigurationList = 3769C7911F4EFF0F000253DF /* Build configuration list for PBXProject "FuturePicks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3769C78D1F4EFF0F000253DF;
+			productRefGroup = 3769C7971F4EFF0F000253DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3769C7951F4EFF0F000253DF /* FuturePicks */,
+				3769C7AC1F4EFF0F000253DF /* FuturePicksTests */,
+				3769C7B71F4EFF0F000253DF /* FuturePicksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3769C7941F4EFF0F000253DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3769C9301F76026C000253DF /* orbitron-medium.otf in Resources */,
+				3769C7A71F4EFF0F000253DF /* LaunchScreen.storyboard in Resources */,
+				3769C92E1F76026C000253DF /* orbitron-bold.otf in Resources */,
+				3769C7A41F4EFF0F000253DF /* Assets.xcassets in Resources */,
+				3769C92F1F76026C000253DF /* orbitron-light.otf in Resources */,
+				3769C92D1F76026C000253DF /* orbitron-black.otf in Resources */,
+				3769C79F1F4EFF0F000253DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C7AB1F4EFF0F000253DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C7B61F4EFF0F000253DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3769C7921F4EFF0F000253DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D432701FA74DE4002B0827 /* PowerBallViewController.swift in Sources */,
+				3733AF731FAD3C4400C4EF44 /* ChooseGamePickerView.swift in Sources */,
+				3769C7A21F4EFF0F000253DF /* FuturePicks.xcdatamodeld in Sources */,
+				3733AF7B1FAD3FDA00C4EF44 /* Lottotexas.swift in Sources */,
+				3769C79C1F4EFF0F000253DF /* ViewController.swift in Sources */,
+				3769C79A1F4EFF0F000253DF /* AppDelegate.swift in Sources */,
+				3769C7D11F60D2DC000253DF /* LottoTexasDataSet.swift in Sources */,
+				3769C7CD1F53C0CE000253DF /* FuturePicksProgramOutline.swift in Sources */,
+				3733AF771FAD3E3E00C4EF44 /* Powerball.swift in Sources */,
+				37D432741FA74E1C002B0827 /* MegaMillionsViewController.swift in Sources */,
+				3769C7CB1F50F4EE000253DF /* PowerBallDataSet.swift in Sources */,
+				3769C8181F642727000253DF /* RandomNumberGenerator.swift in Sources */,
+				3769C7D71F61D9B4000253DF /* MegaMillionsPastNumbers.swift in Sources */,
+				3769C7D31F60D306000253DF /* MegaMillionsDataSet.swift in Sources */,
+				3733AF791FAD3FAE00C4EF44 /* Megamillions.swift in Sources */,
+				37D432721FA74E01002B0827 /* LottoTexasViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C7A91F4EFF0F000253DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3769C7B21F4EFF0F000253DF /* FuturePicksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3769C7B41F4EFF0F000253DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3769C7BD1F4EFF0F000253DF /* FuturePicksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3769C7AF1F4EFF0F000253DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3769C7951F4EFF0F000253DF /* FuturePicks */;
+			targetProxy = 3769C7AE1F4EFF0F000253DF /* PBXContainerItemProxy */;
+		};
+		3769C7BA1F4EFF0F000253DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3769C7951F4EFF0F000253DF /* FuturePicks */;
+			targetProxy = 3769C7B91F4EFF0F000253DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3769C79D1F4EFF0F000253DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3769C79E1F4EFF0F000253DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3769C7A51F4EFF0F000253DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3769C7A61F4EFF0F000253DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3769C7BF1F4EFF0F000253DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3769C7C01F4EFF0F000253DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3769C7C21F4EFF0F000253DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3K5P842PL;
+				INFOPLIST_FILE = FuturePicks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.quaereveritatem.FuturePicks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3769C7C31F4EFF0F000253DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T3K5P842PL;
+				INFOPLIST_FILE = FuturePicks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.quaereveritatem.FuturePicks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3769C7C51F4EFF0F000253DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T3K5P842PL;
+				INFOPLIST_FILE = FuturePicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.quaereveritatem.FuturePicksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuturePicks.app/FuturePicks";
+			};
+			name = Debug;
+		};
+		3769C7C61F4EFF0F000253DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T3K5P842PL;
+				INFOPLIST_FILE = FuturePicksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.quaereveritatem.FuturePicksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FuturePicks.app/FuturePicks";
+			};
+			name = Release;
+		};
+		3769C7C81F4EFF0F000253DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T3K5P842PL;
+				INFOPLIST_FILE = FuturePicksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.quaereveritatem.FuturePicksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FuturePicks;
+			};
+			name = Debug;
+		};
+		3769C7C91F4EFF0F000253DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T3K5P842PL;
+				INFOPLIST_FILE = FuturePicksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.quaereveritatem.FuturePicksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FuturePicks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3769C7911F4EFF0F000253DF /* Build configuration list for PBXProject "FuturePicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3769C7BF1F4EFF0F000253DF /* Debug */,
+				3769C7C01F4EFF0F000253DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3769C7C11F4EFF0F000253DF /* Build configuration list for PBXNativeTarget "FuturePicks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3769C7C21F4EFF0F000253DF /* Debug */,
+				3769C7C31F4EFF0F000253DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3769C7C41F4EFF0F000253DF /* Build configuration list for PBXNativeTarget "FuturePicksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3769C7C51F4EFF0F000253DF /* Debug */,
+				3769C7C61F4EFF0F000253DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3769C7C71F4EFF0F000253DF /* Build configuration list for PBXNativeTarget "FuturePicksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3769C7C81F4EFF0F000253DF /* Debug */,
+				3769C7C91F4EFF0F000253DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3769C7A01F4EFF0F000253DF /* FuturePicks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3769C7A11F4EFF0F000253DF /* FuturePicks.xcdatamodel */,
+			);
+			currentVersion = 3769C7A11F4EFF0F000253DF /* FuturePicks.xcdatamodel */;
+			path = FuturePicks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3769C78E1F4EFF0F000253DF /* Project object */;
+}
