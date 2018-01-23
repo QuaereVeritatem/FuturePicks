@@ -29,6 +29,7 @@
 		3769C92E1F76026C000253DF /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C92A1F76026C000253DF /* orbitron-bold.otf */; };
 		3769C92F1F76026C000253DF /* orbitron-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C92B1F76026C000253DF /* orbitron-light.otf */; };
 		3769C9301F76026C000253DF /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3769C92C1F76026C000253DF /* orbitron-medium.otf */; };
+		377CB9E4200D7DE80081E445 /* TODOList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377CB9E3200D7DE80081E445 /* TODOList.swift */; };
 		37D432701FA74DE4002B0827 /* PowerBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4326F1FA74DE4002B0827 /* PowerBallViewController.swift */; };
 		37D432721FA74E01002B0827 /* LottoTexasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D432711FA74E01002B0827 /* LottoTexasViewController.swift */; };
 		37D432741FA74E1C002B0827 /* MegaMillionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D432731FA74E1C002B0827 /* MegaMillionsViewController.swift */; };
@@ -80,6 +81,7 @@
 		3769C92A1F76026C000253DF /* orbitron-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-bold.otf"; sourceTree = "<group>"; };
 		3769C92B1F76026C000253DF /* orbitron-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-light.otf"; sourceTree = "<group>"; };
 		3769C92C1F76026C000253DF /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "orbitron-medium.otf"; sourceTree = "<group>"; };
+		377CB9E3200D7DE80081E445 /* TODOList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOList.swift; sourceTree = "<group>"; };
 		37D4326F1FA74DE4002B0827 /* PowerBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerBallViewController.swift; sourceTree = "<group>"; };
 		37D432711FA74E01002B0827 /* LottoTexasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoTexasViewController.swift; sourceTree = "<group>"; };
 		37D432731FA74E1C002B0827 /* MegaMillionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegaMillionsViewController.swift; sourceTree = "<group>"; };
@@ -208,9 +210,9 @@
 				37D432751FA83BB3002B0827 /* UI */,
 				3733AF711FAD3A8100C4EF44 /* Controllers */,
 				37D432761FA83BC7002B0827 /* ModelComponents */,
-				37D432771FA8420A002B0827 /* Resources */,
 				3769C79D1F4EFF0F000253DF /* Main.storyboard */,
 				3769C7A51F4EFF0F000253DF /* LaunchScreen.storyboard */,
+				37D432771FA8420A002B0827 /* Resources */,
 				3769C7A81F4EFF0F000253DF /* Info.plist */,
 				3769C7A01F4EFF0F000253DF /* FuturePicks.xcdatamodeld */,
 			);
@@ -274,6 +276,7 @@
 		37D432771FA8420A002B0827 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				377CB9E3200D7DE80081E445 /* TODOList.swift */,
 				3769C7991F4EFF0F000253DF /* AppDelegate.swift */,
 				3769C7A31F4EFF0F000253DF /* Assets.xcassets */,
 				3769C7D61F61D9B4000253DF /* MegaMillionsPastNumbers.swift */,
@@ -435,6 +438,7 @@
 				3733AF771FAD3E3E00C4EF44 /* Powerball.swift in Sources */,
 				37D432741FA74E1C002B0827 /* MegaMillionsViewController.swift in Sources */,
 				3769C7CB1F50F4EE000253DF /* PowerBallDataSet.swift in Sources */,
+				377CB9E4200D7DE80081E445 /* TODOList.swift in Sources */,
 				3769C8181F642727000253DF /* RandomNumberGenerator.swift in Sources */,
 				3769C7D71F61D9B4000253DF /* MegaMillionsPastNumbers.swift in Sources */,
 				3769C7D31F60D306000253DF /* MegaMillionsDataSet.swift in Sources */,

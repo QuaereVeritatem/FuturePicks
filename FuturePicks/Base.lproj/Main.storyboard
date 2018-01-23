@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -26,11 +26,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="qan-8a-fWd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White2GreyGradientBGX" translatesAutoresizingMaskIntoConstraints="NO" id="qan-8a-fWd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" red="0.2196078431372549" green="0.20000000000000001" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future Picks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8U-qJ-qLb">
@@ -44,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The place for future lottery numbers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6S6-Fi-tzb">
-                                <rect key="frame" x="32.5" y="129" width="310" height="21"/>
+                                <rect key="frame" x="32.666666666666657" y="129" width="310" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Jlz-0Z-te3"/>
                                     <constraint firstAttribute="width" constant="310" id="jpL-lR-Wfj"/>
@@ -54,14 +54,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChooseGameImage" translatesAutoresizingMaskIntoConstraints="NO" id="aDN-Ao-vG8" userLabel="TableBGRect">
-                                <rect key="frame" x="44" y="199" width="286" height="269"/>
+                                <rect key="frame" x="44" y="271.66666666666669" width="286" height="269.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="269" id="d3H-ZC-dvW"/>
                                     <constraint firstAttribute="width" constant="286" id="oHA-tq-4bI"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yW-Fr-zaS">
-                                <rect key="frame" x="54" y="219" width="266" height="229"/>
+                                <rect key="frame" x="54" y="291.66666666666669" width="266" height="229.00000000000006"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="9KP-bR-mx4"/>
@@ -69,7 +69,7 @@
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-eI-wUQ">
-                                <rect key="frame" x="124" y="513" width="126" height="64"/>
+                                <rect key="frame" x="124" y="585.66666666666663" width="126" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="126" id="Q7E-Z4-TJ7"/>
                                     <constraint firstAttribute="height" constant="64" id="XsN-AJ-sE3"/>
@@ -86,7 +86,7 @@
                             <constraint firstItem="GTF-eI-wUQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1QC-N3-cts"/>
                             <constraint firstItem="6S6-Fi-tzb" firstAttribute="top" secondItem="L8U-qJ-qLb" secondAttribute="bottom" constant="8" id="AwX-Ac-ttY"/>
                             <constraint firstItem="qan-8a-fWd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E3d-dk-c8i"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qan-8a-fWd" secondAttribute="bottom" id="EAm-8g-N1J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qan-8a-fWd" secondAttribute="bottom" constant="-34" id="EAm-8g-N1J"/>
                             <constraint firstItem="7yW-Fr-zaS" firstAttribute="centerY" secondItem="aDN-Ao-vG8" secondAttribute="centerY" id="Kcb-3r-GY6"/>
                             <constraint firstItem="aDN-Ao-vG8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LB3-eC-eht"/>
                             <constraint firstItem="aDN-Ao-vG8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbN-CP-zoP"/>
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="136.80000000000001" y="136.69950738916256"/>
         </scene>
         <!--PowerBallViewController-->
         <scene sceneID="RWC-gI-gh6">
@@ -119,11 +119,11 @@
                         <viewControllerLayoutGuide type="bottom" id="SMa-Nc-vJ6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dYe-zs-aWz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="eyu-6f-fVk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White2GreyGradientBGX" translatesAutoresizingMaskIntoConstraints="NO" id="eyu-6f-fVk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllNumbersExceptLottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="RLP-58-bVY" userLabel="AllNumbersRect">
                                 <rect key="frame" x="23" y="59" width="328" height="182"/>
@@ -234,7 +234,7 @@
                             <constraint firstItem="L9Y-Hd-Tbq" firstAttribute="top" secondItem="RLP-58-bVY" secondAttribute="bottom" constant="40" id="TPi-qv-n2n"/>
                             <constraint firstItem="RLP-58-bVY" firstAttribute="top" secondItem="Ph5-s3-lVe" secondAttribute="bottom" constant="-63" id="UbT-Nm-EPe"/>
                             <constraint firstItem="adX-NS-dtQ" firstAttribute="leading" secondItem="RLP-58-bVY" secondAttribute="trailing" constant="-57" id="V19-W8-hY6"/>
-                            <constraint firstItem="SMa-Nc-vJ6" firstAttribute="top" secondItem="eyu-6f-fVk" secondAttribute="bottom" id="Vf6-qS-8bm"/>
+                            <constraint firstItem="SMa-Nc-vJ6" firstAttribute="top" secondItem="eyu-6f-fVk" secondAttribute="bottom" constant="-34" id="Vf6-qS-8bm"/>
                             <constraint firstItem="dgf-tC-vnn" firstAttribute="top" secondItem="lou-4L-9UI" secondAttribute="bottom" constant="-30" id="cUZ-r2-VZQ"/>
                             <constraint firstItem="L9Y-Hd-Tbq" firstAttribute="top" secondItem="aGa-KA-ESM" secondAttribute="bottom" constant="-63" id="dZF-K3-1PT"/>
                             <constraint firstItem="eyu-6f-fVk" firstAttribute="top" secondItem="dYe-zs-aWz" secondAttribute="top" id="eh9-1r-sqO"/>
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Q7-X5-zHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293.5999999999999" y="-603.14842578710648"/>
+            <point key="canvasLocation" x="2293.5999999999999" y="-603.69458128078816"/>
         </scene>
         <!--LottoTexasViewController-->
         <scene sceneID="FkQ-Eo-Z3G">
@@ -279,11 +279,11 @@
                         <viewControllerLayoutGuide type="bottom" id="6jX-gt-dAS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="o7a-iM-E2m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-OV-eY4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White2GreyGradientBGX" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-OV-eY4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="2kw-8V-prl" userLabel="NumbersBGRect">
                                 <rect key="frame" x="15" y="59" width="345" height="182"/>
@@ -383,7 +383,7 @@
                             <constraint firstItem="2kw-8V-prl" firstAttribute="centerX" secondItem="o7a-iM-E2m" secondAttribute="centerX" id="aKZ-ix-xc9"/>
                             <constraint firstItem="2kw-8V-prl" firstAttribute="top" secondItem="By8-9O-VMU" secondAttribute="bottom" constant="-63" id="doT-UF-zgN"/>
                             <constraint firstItem="QsW-qr-UUJ" firstAttribute="top" secondItem="MH4-eq-pI6" secondAttribute="bottom" constant="-30" id="g4K-62-fKO"/>
-                            <constraint firstItem="6jX-gt-dAS" firstAttribute="top" secondItem="TbK-OV-eY4" secondAttribute="bottom" id="jqh-pq-ns6"/>
+                            <constraint firstItem="6jX-gt-dAS" firstAttribute="top" secondItem="TbK-OV-eY4" secondAttribute="bottom" constant="-34" id="jqh-pq-ns6"/>
                             <constraint firstAttribute="trailing" secondItem="TbK-OV-eY4" secondAttribute="trailing" id="phq-b7-gpu"/>
                             <constraint firstItem="T4v-cT-RcV" firstAttribute="leading" secondItem="2kw-8V-prl" secondAttribute="trailing" constant="-48" id="t6J-EC-vRm"/>
                         </constraints>
@@ -406,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDd-K4-tIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2295.1999999999998" y="137.18140929535232"/>
+            <point key="canvasLocation" x="2295.1999999999998" y="136.69950738916256"/>
         </scene>
         <!--MegaMillionsViewController-->
         <scene sceneID="fgh-VO-xjk">
@@ -417,11 +417,11 @@
                         <viewControllerLayoutGuide type="bottom" id="IKG-7K-KEX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7Ka-5M-2SW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewBGDesignWhite" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-nY-eNH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White2GreyGradientBGX" translatesAutoresizingMaskIntoConstraints="NO" id="OEf-nY-eNH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AllNumbersExceptLottoTexasRectangle" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-dz-XIU" userLabel="AllNumbersRect">
                                 <rect key="frame" x="23" y="59" width="328" height="182"/>
@@ -438,7 +438,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-fc-IWa">
-                                <rect key="frame" x="95.5" y="79" width="183" height="43"/>
+                                <rect key="frame" x="95.666666666666686" y="79" width="183" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="183" id="66k-Wy-rk7"/>
                                     <constraint firstAttribute="height" constant="43" id="o3O-Ed-x8O"/>
@@ -543,7 +543,7 @@
                             <constraint firstItem="E2W-dz-XIU" firstAttribute="top" secondItem="C9i-fc-IWa" secondAttribute="bottom" constant="-63" id="nF5-qA-s2R"/>
                             <constraint firstItem="EeH-Ix-Y2Y" firstAttribute="centerX" secondItem="7Ka-5M-2SW" secondAttribute="centerX" id="r42-FE-4BF"/>
                             <constraint firstItem="2af-jt-95P" firstAttribute="leading" secondItem="RgI-oz-OEO" secondAttribute="trailing" constant="22" id="rY0-kb-fRv"/>
-                            <constraint firstItem="IKG-7K-KEX" firstAttribute="top" secondItem="OEf-nY-eNH" secondAttribute="bottom" id="smR-tU-3vE"/>
+                            <constraint firstItem="IKG-7K-KEX" firstAttribute="top" secondItem="OEf-nY-eNH" secondAttribute="bottom" constant="-34" id="smR-tU-3vE"/>
                             <constraint firstAttribute="trailing" secondItem="OEf-nY-eNH" secondAttribute="trailing" id="vev-li-boV"/>
                         </constraints>
                     </view>
@@ -565,7 +565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07E-QQ-IwH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2293.5999999999999" y="857.72113943028489"/>
+            <point key="canvasLocation" x="2293.5999999999999" y="857.14285714285722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Du-Ci-qO7">
@@ -573,7 +573,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P6f-D1-5z1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="3Q8-5k-mCy">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.36078431372549019" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -593,7 +593,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E3y-lB-mxy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="oOm-ww-I59">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.36078431372549019" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -613,7 +613,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ydV-YW-MMr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="QDU-KM-Fkp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.36078431372549019" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -632,8 +632,8 @@
         <image name="AllNumbersExceptLottoTexasRectangle" width="342" height="194"/>
         <image name="ChooseGameImage" width="300" height="283"/>
         <image name="LottoTexasRectangle" width="359" height="194"/>
-        <image name="NewBGDesignWhite" width="375" height="667"/>
         <image name="PlayButtonImage" width="138" height="76"/>
+        <image name="White2GreyGradientBGX" width="375" height="812"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Xwa-t5-wNr"/>
