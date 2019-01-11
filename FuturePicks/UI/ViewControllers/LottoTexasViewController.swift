@@ -10,6 +10,7 @@ import UIKit
 
 class LottoTexasViewController: UIViewController {
 
+  var numberArray: [Int] = []
   @IBOutlet weak var num1: UILabel!
   @IBOutlet weak var num2: UILabel!
   @IBOutlet weak var num3: UILabel!
@@ -18,16 +19,23 @@ class LottoTexasViewController: UIViewController {
   @IBOutlet weak var num6: UILabel!
   
     override func viewDidLoad() {
-        super.viewDidLoad()
+      super.viewDidLoad()
+      var LTNumbers = generateAllTheNumbers(ballNumbers: 6, matrixToDrawFrom: ltNumbersAndDrawFreqMatrix())
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+  //loop for 5 normal powerball numbers
+  for numDraw in 0..<LTNumbers.count {
+  numberArray.append(LTNumbers[numDraw])
+  print("The number \(numDraw + 1) number drawn is \(numberArray[numDraw])")
+  }
+  
+  // change this to print each label in the loop (use map 0$)
+  num1.text = String(numberArray[0])
+  num2.text = String(numberArray[1])
+  num3.text = String(numberArray[2])
+  num4.text = String(numberArray[3])
+  num5.text = String(numberArray[4])
+  num6.text = String(numberArray[5])
+}
 
     /*
     // MARK: - Navigation

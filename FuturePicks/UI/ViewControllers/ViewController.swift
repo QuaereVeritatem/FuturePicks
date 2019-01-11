@@ -85,31 +85,33 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
   
   func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
     
-    var pickerLabel : UILabel
-    
+    var pickerLabel : UILabel    
     if let label = view as? UILabel {
-      
       pickerLabel = label
-      
     } else {
-      
       // If view is nil, no UIView is available to recycle, so create a new one!
       pickerLabel = UILabel()
-      
       // Programmaticly set the label's background!
       let hue = CGFloat(row)/CGFloat(pickerData.count)
       //pickerLabel.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness: 1.0, alpha: 0.3)
     }
-    
     let titleData = pickerData[row]
-    
-    let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 36.0)!,NSForegroundColorAttributeName:UIColor.white])
-    
+    let myTitle = NSAttributedString(string: titleData, attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.font):UIFont(name: "Georgia", size: 36.0)!,convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor):UIColor.white]))
     pickerLabel.attributedText = myTitle
     pickerLabel.textAlignment = .center
-    
     return pickerLabel
   }
 
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
+}
